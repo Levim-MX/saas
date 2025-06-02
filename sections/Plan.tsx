@@ -72,7 +72,7 @@ const Plan = () => {
         <div className=" relative  flex flex-col lg:flex-row lg:items-end  lg:justify-center lg:px-5 lg:gap-5  items-center  gap-9 2xl:gap-36  ">
           {/* first card */}
           <div className="   flex flex-col w-[300px] justify-center bg-white shadow-xl rounded-2xl border border-gray-200 cursor-pointer">
-            <div className="  relative w-[500px] ">
+            <div className="   relative w-[500px] ">
               <motion.img
                 src={star.src}
                 alt=" star"
@@ -123,8 +123,13 @@ const Plan = () => {
             ))}
           </div>
           {/* second card */}
-          <div className=" p-2 flex flex-col  w-[300px]  justify-center bg-black shadow-xl rounded-2xl border border-gray-200 cursor-pointer transition-transform duration-500 hover:scale-105">
+          <div className=" relative p-2 flex flex-col  w-[300px]  justify-center bg-black shadow-xl rounded-2xl border border-gray-200 cursor-pointer transition-transform duration-500 hover:scale-105">
+            <div className="absolute -z-10 w-[100%] h-[35%] top-0 left-0 pink-gradient opacity-[50%]"></div>
+
+            <div className="absolute -z-20 w-[100%] h-[80%] bottom-0 right-10 blue-gradient opacity-[50%]"></div>
+
             {/* header of the card  */}
+
             <div className=" flex flex-col gap-6 mb-10 ml-10 pt-2 ">
               <div className="  flex flex-row justify-between ">
                 <p className=" opacity-50 text-white">pro</p>

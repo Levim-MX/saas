@@ -35,7 +35,35 @@
   }
 }
 
+/* globals.css أو ملف مخصّص آخر */
+.pink-gradient {
+  background: radial-gradient(
+    circle at 30% 30%,
+    #ffb1c1,
+    /* لون وردي فاتح في المنتصف */ #d63384 70%,
+    /* وردي فاتح يتدرّج إلى داكن */ transparent 100%
+  );
+  filter: blur(80px); /* إضافة ضبابية ليظهر كضوء ناعم */
+}
 
+.blue-gradient {
+  background: radial-gradient(
+    circle at 70% 20%,
+    #2fccee,
+    /* بداية التدرّج - سيان */ #6668d0 60%,
+    /* وسط التدرّج - أرجواني غامق */ transparent 100%
+  );
+  filter: blur(100px);
+}
+
+.white-gradient {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  filter: blur(120px);
+}
 
 @layer base {
   :root {
@@ -92,8 +120,6 @@
     --chart-5: 340 75% 55%;
   }
 }
-
-
 
 @layer base {
   * {
